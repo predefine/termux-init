@@ -1,0 +1,8 @@
+#!/data/data/com.termux/files/usr/bin/bash
+termux-wake-lock
+
+source $HOME/.config/termux_init.conf
+
+for i in $enabled; do
+    sh $HOME/.termux_init/services/$i.sh
+done
